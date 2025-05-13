@@ -18,7 +18,7 @@ const Footer = () => {
               height={50}
               className="border border-gray-600 rounded-2xl"
             />
-            <p className="text-md font-bold md:text-2xl">AB Proxy</p>
+            <p className="text-md font-semibold md:text-2xl">AB Proxy</p>
           </div>
 
           <div className="flex flex-col md:flex-row w-full gap-3">
