@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  @apply bg-black text-amber-50;
+  @apply bg-black text-amber-50;
+  @apply bg-black;
+  @apply text-amber-50;
+}
+
+@theme {
+  --font-Headings: "Space Grotesk", serif;
+  --font-Para: "Geist", sans-serif;
+  --color-p1: #2EF2FF;
+  --color-p2: #3C52D9;
+  --color-p3: #C8EA80;
+  --color-p4: #EAEDFF;
+  --color-p5: #C4CBF5;
+  --color-s1: #080D27;
+  --color-s2: #0C1838;
+  --color-s3: #334679;
+  --color-s4: #1959AD;
+  --color-s5: #263466;
+  --color-black: #000000;
+  --color-black-100: #05091D;
+  --color-navy-100:#2A193C;
+  --color-button:#8C45FF66;
+}
