@@ -37,8 +37,8 @@ const App = () => {
       <section className="sm:px-16 px-8 -mb-10 ">
         <Contact/>
       </section>
-   
-      <Footer/>
+      <Foter/>
+      
     </main>
   );
 };

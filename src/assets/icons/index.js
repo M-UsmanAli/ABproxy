@@ -3,6 +3,7 @@ import chevronLeft from './chevron-left.svg'
 import cheveronRight from './chevron-right.svg'
 import copyrightSign from './copyright-sign.svg'
 import facebook from './facebook.svg'
+import github from './github.svg'
 import gmail from './gmail.svg'
 import hamburger from './hamburger.svg'
 import hamburgerwhite from './hamburgerwhite.svg'
@@ -21,6 +22,7 @@ export {
     chevronLeft,
     copyrightSign,
     facebook,
+    github,
     gmail,
     hamburger,
     hamburgerwhite,
