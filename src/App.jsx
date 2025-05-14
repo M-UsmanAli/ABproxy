@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Foter from "./components/Foter";
 import Navbar from "./components/Navbar";
 import Analytics from "./sections/Analytics";
 import Contact from "./sections/Contact";
@@ -36,6 +37,7 @@ const App = () => {
       <section className="sm:px-16 px-8 -mb-10 ">
         <Contact/>
       </section>
+   
       <Footer/>
     </main>
   );
