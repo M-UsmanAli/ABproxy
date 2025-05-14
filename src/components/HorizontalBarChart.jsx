@@ -18,7 +18,9 @@ const data = [
 const HorizontalBarChart = () => {
   return (
     <div className="w-100 md:w-150 h-auto  p-4  bg-black border border-gray-400 rounded-2xl ">
-      <h2 className="text-xl font-semibold text-gray-400 mb-4 text-start">Daily Active Users</h2>
+      <h2 className="text-xl font-semibold text-gray-400 mb-4 text-start">
+        Daily Active Users
+      </h2>
       <div className="flex justify-start items-start gap-2 mb-5">
         <h1 className="text-3xl font-bold">12.4k</h1>
         <div className="flex flex-col items-start justify-between gap-2">
@@ -34,7 +36,6 @@ const HorizontalBarChart = () => {
         >
           <XAxis type="number" />
           <YAxis dataKey="name" type="category" />
-          <Tooltip />
           <Bar dataKey="value" fill="#ffffff" radius={[0, 10, 10, 0]} />
         </BarChart>
       </ResponsiveContainer>
