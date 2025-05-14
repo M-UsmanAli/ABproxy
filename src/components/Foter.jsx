@@ -33,7 +33,7 @@ const Foter = () => {
 
       <div className="flex justify-between items-center  border-b-2 border-gray-400 py-5">
         <div className="flex flex-col items-start gap-4">
-          <div className="flex  items-center gap-2">
+          <div className="flex flex-col md:flex-row items-center gap-2">
             <img
               src={logo}
               alt="SAAS Logo"
