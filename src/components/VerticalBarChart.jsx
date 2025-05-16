@@ -1,12 +1,6 @@
 // components/VerticalBarChart.jsx
 import React from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 
 const data = [
   { name: "Login", value: 100 },
@@ -33,7 +27,12 @@ const data = [
 
 const VerticalBarChart = () => {
   return (
-    <div className="w-100 md:w-150 h-auto p-4 bg-black border border-gray-400 rounded-2xl">
+    <div
+      className="w-100 md:w-150 h-auto p-4  bg-black text-white  flex-shrink-0 rounded-2xl"
+      style={{
+        boxShadow: `inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)`,
+      }}
+    >
       <h2 className="text-xl font-semibold text-gray-400 mb-4 text-start">
         Feature Usage
       </h2>
@@ -46,7 +45,7 @@ const VerticalBarChart = () => {
       </div>
       <ResponsiveContainer width="100%" height={290}>
         <BarChart data={data}>
-          <XAxis  interval={0}  textAnchor="end" height={29} />
+          <XAxis interval={0} textAnchor="end" height={29} />
           <YAxis />
           <Bar dataKey="value" fill="#ffffff" radius={[10, 10, 0, 0]} />
         </BarChart>

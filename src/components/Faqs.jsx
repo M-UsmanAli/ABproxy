@@ -13,13 +13,16 @@ const Faqs = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-700 rounded-lg p-4 bg-gray-900 text-white"
+            className="border border-gray-700 rounded-lg p-10 bg-black text-white  flex-shrink-0"
+             style={{
+            boxShadow: `inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)`,
+          }}
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="flex justify-between items-center w-full text-left"
+              className="flex justify-between items-center w-full text-left  cursor-pointer"
             >
-              <span className="text-xl font-medium">{faq.question}</span>
+              <span className="text-2xl font-medium">{faq.question}</span>
               <span className="text-xl">
                 {activeIndex === index ? "-" : "+"}
               </span>

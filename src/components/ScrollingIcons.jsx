@@ -26,7 +26,7 @@ const ScrollingIcons = () => {
         {[...icons, ...icons].map((icon, index) => (
           <button
             key={index}
-            className="px-6 py-2 rounded-xl bg-black text-white font-semibold flex-shrink-0"
+            className="px-8 py-3 rounded-full bg-black text-white font-semibold flex-shrink-0"
             style={{
               boxShadow: `
                 inset 0 0 0 1px hsla(0, 0%, 100%, 0.075),

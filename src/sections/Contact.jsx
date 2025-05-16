@@ -116,8 +116,8 @@ const Contact = () => {
           label="Send Message"
           className="px-5 py-3 md:px-10 md:py-5 mt-5 text-xl leading-normal rounded-2xl font-semibold  bg-black text-white  flex-shrink-0  cursor-pointer font-Headings"
           style={{
-                boxShadow: `inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)`,
-              }}
+            boxShadow: `inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)`,
+          }}
         />
       </form>
     </section>
