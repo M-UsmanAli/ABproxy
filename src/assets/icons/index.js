@@ -15,7 +15,7 @@ import spark from './spark.svg'
 import star from './star.svg'
 import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
-
+import uparrow from './uparrow.svg'
 
 export {
     arrowRight,
@@ -34,5 +34,6 @@ export {
     spark,
     star,
     truckFast,
-    twitter
+    twitter,
+    uparrow
 }

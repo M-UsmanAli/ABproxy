@@ -22,7 +22,13 @@ const Foter = () => {
           <input
             type="text"
             placeholder="Enter your email"
-            className="w-full md:w-90 px-4 py-4 text-base bg-black text-white border-3 border-gray-400 rounded-full focus:outline-none focus:border-white"
+            className="w-full md:w-90 px-4 py-4 text-base bg-black text-white font-semibold flex-shrink-0 rounded-full focus:outline-none focus:border-white"
+            style={{
+              boxShadow: `
+          inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.075),
+          inset 0 0 1vw hsla(0, 0%, 100%, 0.2)
+        `,
+            }}
           />
           <Button
             label="Subscribe"

@@ -3,6 +3,7 @@ import StarsBackground from "../canvas/StarBackground";
 import Button from "../components/Button";
 import Paragraph from "../components/Paragraph";
 import ScrollingIcons from "../components/ScrollingIcons";
+import { uparrow } from "../assets/icons";
 const Hero = () => {
   return (
     <section
@@ -22,13 +23,14 @@ const Hero = () => {
         />
         <Button
           label="Request Early Access"
-          className="px-4 py-2 md:px-7 md:py-5  text-lg rounded-xl text-white font-semibold flex items-center "
+          className="px-4 py-2 md:px-6 md:py-4  text-lg rounded-xl text-white font-semibold flex items-center cursor-pointer"
           style={{
             boxShadow: `
           inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.075),
           inset 0 0 1vw hsla(0, 0%, 100%, 0.2)
         `,
           }}
+          icon={uparrow}
           onClick={() => {
             const section = document.querySelector("#contact");
             section?.scrollIntoView({ behavior: "smooth" });

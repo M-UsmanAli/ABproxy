@@ -29,8 +29,8 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-         
-            <ul className="flex flex-1 justify-center items-center gap-10 max-lg:hidden font-Headings bg-black py-1 px-2 ">
+
+          <ul className="flex flex-1 justify-center items-center gap-10 max-lg:hidden font-Headings bg-black py-1 px-2 ">
             {navLinks.map((item) => (
               <li key={item.label} className="relative group">
                 <a
@@ -59,15 +59,19 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-         
-          
         </div>
 
         {/* Desktop Button */}
         <div className="flex gap-5 max-lg:hidden">
           <Button
             label={isHovered ? "Join waitlist" : "Contact Us"}
-            className="px-7 py-3 border-3 text-lg leading-none rounded-lg font-bold text-white border-gray-500 cursor-pointer transition-all duration-300 font-Headings"
+            className="px-7 py-3 rounded-xl bg-black text-white font-semibold flex-shrink-0 cursor-pointer"
+            style={{
+              boxShadow: `
+                inset 0 0 0 1px hsla(0, 0%, 100%, 0.075),
+                inset 0 0 1vw hsla(0, 0%, 100%, 0.2)
+              `,
+            }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => {
