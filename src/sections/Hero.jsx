@@ -1,8 +1,8 @@
 import videoFeature from "../assets/HEADERANIMATION.mp4";
 import StarsBackground from "../canvas/StarBackground";
 import Button from "../components/Button";
-import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
+import ScrollingIcons from "../components/ScrollingIcons";
 const Hero = () => {
   return (
     <section
@@ -22,7 +22,13 @@ const Hero = () => {
         />
         <Button
           label="Request Early Access"
-          className="px-5 py-3 md:px-7 md:py-5  text-lg leading-none rounded-lg font-bold border-2 border-white bg-none bg-transparent text-white cursor-pointer font-Headings"
+          className="px-4 py-2 md:px-7 md:py-5  text-lg rounded-xl text-white font-semibold flex items-center "
+          style={{
+            boxShadow: `
+          inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.075),
+          inset 0 0 1vw hsla(0, 0%, 100%, 0.2)
+        `,
+          }}
           onClick={() => {
             const section = document.querySelector("#contact");
             section?.scrollIntoView({ behavior: "smooth" });
@@ -32,6 +38,7 @@ const Hero = () => {
         <div className="w-screen flex justify-center -mt-1 md:-mt-35 px-4 -z-1">
           <video src={videoFeature} autoPlay muted playsInline loop />
         </div>
+        <ScrollingIcons/>
       </div>
     </section>
   );

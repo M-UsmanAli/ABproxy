@@ -34,3 +34,4 @@ export const faqs = [
     answer:"You have full flexibility. ABproxy can send your data to your own warehouse, your analytics platform, or stay within ABproxy — whichever fits your needs best.",
   },
 ];
+

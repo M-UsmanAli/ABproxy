@@ -13,7 +13,7 @@ body{
 }
 
 @theme {
-  --font-Headings: "Space Grotesk", serif;
+  --font-Headings: 'Inter', 'sans-serif'
   --font-Para: "Geist", sans-serif;
   --color-p1: #2EF2FF;
   --color-p2: #3C52D9;

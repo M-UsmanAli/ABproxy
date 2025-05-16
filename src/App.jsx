@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Foter from "./components/Foter";
 import Navbar from "./components/Navbar";
+import ScrollingIcons from "./components/ScrollingIcons";
 import Analytics from "./sections/Analytics";
 import Contact from "./sections/Contact";
 import DataPipelines from "./sections/DataPipelines";
@@ -38,7 +39,7 @@ const App = () => {
         <Contact/>
       </section>
       <Foter/>
-      
+      <ScrollingIcons/>
     </main>
   );
 };
