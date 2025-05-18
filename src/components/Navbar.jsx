@@ -13,7 +13,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="px-15 py-7 fixed top-0 left-0 z-50 w-full  bg-black">
+    <div className="px-15 py-3 my-5 fixed top-0 left-0 z-50 w-full  bg-transparent "
+    style={{
+    backgroundColor: "hsla(0, 0%, 100%, 0.05)",
+    backdropFilter: "blur(5px)",
+    WebkitBackdropFilter: "blur(5px)",
+  }}>
       <nav className="flex justify-between items-center">
         {/* Logo and brand */}
         <div className="flex items-center gap-15">
@@ -30,7 +35,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
 
-          <ul className="flex flex-1 justify-center items-center gap-10 max-lg:hidden font-Headings bg-black py-1 px-2 ">
+          <ul className="flex flex-1 justify-center items-center gap-10 max-lg:hidden font-Headings  py-1 px-2 ">
             {navLinks.map((item) => (
               <li key={item.label} className="relative group">
                 <a
