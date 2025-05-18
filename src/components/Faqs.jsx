@@ -9,7 +9,7 @@ const Faqs = () => {
   };
   return (
     <>
-      <div className="w-full max-w-7xl mx-auto p-8 rounded-2xl space-y-6 shadow-lg  mt-20 ">
+      <div className="w-full justify-between md:max-w-7xl mx-auto p-8 rounded-2xl space-y-6 shadow-lg  mt-20 ">
         {faqs.map((faq, index) => (
           <div
             key={index}
@@ -22,8 +22,8 @@ const Faqs = () => {
               onClick={() => toggleFAQ(index)}
               className="flex justify-between items-center w-full text-left  cursor-pointer"
             >
-              <span className="text-2xl font-medium">{faq.question}</span>
-              <span className="text-2xl font-extrabold">
+              <span className="text-md md:text-2xl font-medium">{faq.question}</span>
+              <span className="text-md font-normal md:text-2xl md:font-extrabold">
                 {activeIndex === index ? "-" : "+"}
               </span>
             </button>
