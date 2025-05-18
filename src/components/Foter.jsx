@@ -1,143 +1,100 @@
-import {
-  facebook,
-  gmail,
-  linkedIn,
-  twitter,
-  github,
-  instagram,
-} from "../assets/icons";
 import logo from "../assets/logo.png";
 import Button from "../components/Button";
-import { navLinks } from "../constants";
-import Heading from "./Heading";
+import { footerLinks } from "../constants";
+
 const Foter = () => {
   return (
     <footer className="px-15 py-8 z-10 w-full bg-black">
-      <div className="flex  flex-col md:flex-row justify-between items-center border-t-2 border-b-2 border-gray-400 py-10 gap-5 md:gap-0">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold font-Headings">
-          Sign up for Grafana stack updates
-        </h1>
+      <div className="w-full">
+        {/* Top Shadow Line */}
+        <div
+          style={{
+            boxShadow: `inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)`,
+          }}
+          className="h-[1px] w-full bg-black text-white  flex-shrink-0"
+        />
 
-        <div className="flex flex-row gap-3">
-          <input
-            type="text"
-            placeholder="Enter your email"
-            className="w-full md:w-90 px-4 py-4 text-base bg-black text-white font-semibold flex-shrink-0 rounded-full focus:outline-none focus:border-white"
-            style={{
-              boxShadow: `
-          inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.075),
-          inset 0 0 1vw hsla(0, 0%, 100%, 0.2)
-        `,
-            }}
-          />
-          <Button
-            label="Subscribe"
-            className="px-5 py-4 md:px-6 md:py-3 text-xl leading-none rounded-full font-bold border-2 border-white bg-white text-black underline cursor-pointer font-Headings"
-          />
-        </div>
-      </div>
-
-      <div className="flex justify-between items-center  border-b-2 border-gray-400 py-5">
-        <div className="flex flex-col items-start gap-4">
-          <div className="flex flex-col md:flex-row items-center gap-2">
+        {/* Content */}
+        <div className="flex flex-col md:flex-row justify-between items-center py-10 ">
+          <div className="flex  items-center gap-2">
             <img
               src={logo}
               alt="SAAS Logo"
-              className="w-15 h-15 md:w-[90px] md:h-[90px] border border-gray-600 rounded-2xl"
+              width={50}
+              height={50}
+              className="border border-gray-600 rounded-2xl"
             />
+            <p className="text-md font-semibold md:text-2xl">AB Proxy</p>
+          </div>
 
-            <p className="text-md font-semibold md:text-4xl">AB Proxy</p>
+          <div className="flex gap-5">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              className="w-full md:w-90 px-4 py-4 text-base bg-black text-white font-semibold flex-shrink-0 rounded-full focus:outline-none focus:border-white"
+            style={{
+                  boxShadow: `inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.075), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)`,
+                }}
+            />
+            <Button
+            label="Subscribe"
+            className="px-7 py-3 rounded-xl bg-black text-white font-semibold flex-shrink-0 cursor-pointer underline"
+            style={{
+              boxShadow: `
+                inset 0 0 0 1px hsla(0, 0%, 100%, 0.075),
+                inset 0 0 1vw hsla(0, 0%, 100%, 0.2)
+              `,
+            }}
+          />
           </div>
         </div>
 
-        <div className="flex flex-col  items-center gap-2 font-Headings">
-          <div className="flex justify-between items-center gap-3">
-            <a href="">
-              <img
-                src={facebook}
-                alt="Facebook"
-                width={50}
-                height={50}
-                className="bg-white rounded-full "
-              />
-            </a>
-            <a href="">
-              <img
-                src={twitter}
-                alt="Facebook"
-                width={55}
-                height={55}
-                className="bg-white rounded-full border-3 border-white"
-              />
-            </a>
-            <a href="">
-              <img
-                src={github}
-                alt="Facebook"
-                width={55}
-                height={55}
-                className="bg-white rounded-full border-3 border-white"
-              />
-            </a>
-            <a href="">
-              <img
-                src={instagram}
-                alt="Facebook"
-                width={55}
-                height={55}
-                className="bg-white rounded-full border-3 border-white"
-              />
-            </a>
-            <a href="">
-              <img
-                src={linkedIn}
-                alt="Facebook"
-                width={55}
-                height={55}
-                className="bg-white rounded-full border-3 border-white"
-              />
-            </a>
-            <a href="">
-              <img
-                src={gmail}
-                alt="Facebook"
-                width={50}
-                height={50}
-                className="bg-white rounded-full border-3 border-white"
-              />
-            </a>
-          </div>
-        </div>
+        {/* Bottom Shadow Line */}
+        <div
+          style={{
+            boxShadow:
+              "inset 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1), inset 0 0 1vw hsla(0, 0%, 100%, 0.2)",
+          }}
+          className="h-[1px] w-full"
+        />
       </div>
 
-      {/* Main Menu Column */}
-      <div className="flex flex-col gap-3 items-start font-Headings mt-6">
-        {navLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            className="font-semibold text-xl text-white hover:text-purple-400 transition"
-          >
-            {link.label}
-          </a>
+      <div className="flex flex-wrap justify-start py-10 gap-12 md:gap-50 font-Headings text-center">
+        {footerLinks.map((link) => (
+          <div key={link.label} className="flex  items-start flex-col gap-5">
+            {/* Main Menu */}
+            <a
+              href={link.href}
+              className="font-bold text-xl text-white hover:text-purple-400 transition"
+            >
+              {link.label}
+            </a>
+
+            {/* Submenu (if exists) */}
+            {link.subMenu && (
+              <div className="flex justify-start items-start flex-col gap-5">
+                {link.subMenu.map((sub) => (
+                  <a
+                    key={sub.label}
+                    href={sub.href}
+                    className="flex items-center gap-2 text-xl text-gray-400 hover:text-purple-300"
+                  >
+                    {/* Icon (if exists) */}
+                    {sub.icon && (
+                      <img
+                        src={sub.icon}
+                        alt={sub.label}
+                        className="w-5 h-5 object-contain bg-white rounded-full border-2 border-white"
+                      />
+                    )}
+                    {/* Label */}
+                    <span className="leading-none">{sub.label}</span>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
-      </div>
-
-      {/* Submenu Column */}
-      <div className="flex flex-col gap-2 items-start font-Headings mt-2">
-        {navLinks.map(
-          (link) =>
-            link.subMenu &&
-            link.subMenu.map((sub) => (
-              <a
-                key={sub.label}
-                href={sub.href}
-                className="text-lg text-gray-400 hover:text-purple-300"
-              >
-                {sub.label}
-              </a>
-            ))
-        )}
       </div>
     </footer>
   );

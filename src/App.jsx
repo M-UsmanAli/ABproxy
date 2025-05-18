@@ -39,6 +39,7 @@ const App = () => {
         <Contact/>
       </section>
       <Foter/>
+      <Footer/>
       <ScrollingIcons/>
     </main>
   );

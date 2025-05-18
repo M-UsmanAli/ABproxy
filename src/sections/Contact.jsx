@@ -25,7 +25,10 @@ const Contact = () => {
       className="w-full  min-h-screen flex flex-col text-center px-6 sm:px-10 lg:px-40 py-28"
       id="contact"
     >
-      <Heading data="Contact" />
+      <div className="justify-center text-center">
+        <Heading data="Contact" />
+      </div>
+
       <div className="flex justify-center text-center items-center mt-5">
         <Paragraph data="We’d love to hear from you!" />
       </div>
