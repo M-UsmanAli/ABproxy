@@ -23,7 +23,7 @@ const Faqs = () => {
               className="flex justify-between items-center w-full text-left  cursor-pointer"
             >
               <span className="text-2xl font-medium">{faq.question}</span>
-              <span className="text-xl">
+              <span className="text-2xl font-extrabold">
                 {activeIndex === index ? "-" : "+"}
               </span>
             </button>
