@@ -25,10 +25,6 @@ const Contact = () => {
       className="w-full  min-h-screen flex flex-col text-center px-6 sm:px-10 lg:px-40 py-28"
       id="contact"
     >
-     
-        
-     
-
       <div className="flex flex-col justify-center text-center items-center mt-5">
         <Heading data="Contact" />
         <Paragraph data="We’d love to hear from you!" />
