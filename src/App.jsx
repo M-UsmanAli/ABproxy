@@ -1,5 +1,4 @@
 import Footer from "./components/Footer";
-import Foter from "./components/Foter";
 import Navbar from "./components/Navbar";
 import ScrollingIcons from "./components/ScrollingIcons";
 import Analytics from "./sections/Analytics";
@@ -38,9 +37,8 @@ const App = () => {
       <section className="sm:px-16 px-8 -mb-10 ">
         <Contact/>
       </section>
-      <Foter/>
+    
       <Footer/>
-      <ScrollingIcons/>
     </main>
   );
 };
